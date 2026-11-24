@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+.leaflet-container {
+  font-family: var(--font-sans);
+  z-index: 1;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 10;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  border: 1px solid #E7DEC9;
+  box-shadow: 0 10px 25px -10px rgba(19, 56, 40, 0.22);
+}
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-forest-950: #0C2419;
+  --color-forest-900: #133828;
+  --color-forest-800: #1B4A35;
+  --color-forest-700: #256146;
+  --color-forest-600: #2F7A58;
+
+  --color-beige-50: #FAF8F4;
+  --color-beige-100: #F3EDE2;
+  --color-beige-200: #E7DEC9;
+  --color-beige-300: #D5C8AD;
+
+  --color-gold-300: #E2C583;
+  --color-gold-400: #CFA957;
+  --color-gold-500: #B88B3A;
+  --color-gold-600: #997027;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-padding-top: 5rem;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

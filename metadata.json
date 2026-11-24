@@ -1,0 +1,8 @@
+{
+  "name": "Verdant Vale — Smart Local Tourism & Business Portal",
+  "description": "Connect with curated natural destinations, eco-resorts, heritage homestays, local artisans, tour guides, and AI-assisted itinerary planning in Verdant Vale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
